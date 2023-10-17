@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <title>
+            strings
+        </title>
+    </head>
+    <body>
+<script>
+// -----------
+    // let a="soujanya"
+    // for(i in a){
+    //     console.log(i)
+    // }
+    
+// console.log("hi"+2+"is a prime num"+3+"is odd and"+4+"is even")
+// console.log(`hi ${2} is a prime number ${1+2} is an odd number ${2+2} is even number`)
+
+// --------------------------
+// let a="string"
+// for(i of a){
+//     console.log(i)
+// }
+// -------------
+// let a="soujanya"
+// for(i of a){
+//     console.log(a[i]);
+// }
+// -----------------
+// var a="happy"
+// var b=""
+// for(let i=0;i<a.length;i++){
+//     if (a[i]=="p"){
+//         b+="i"
+//     }
+//     else{
+//     b+=a[i];
+//     }
+// }
+// console.log(b);
+// --------------------------
+// debugger
+// var a=5;
+// console.log(5 + + 5);	
+// // addition is happaned by +unary operator
+// console.log(5 - - 5);	
+// // addition is done (-(-))=+
+// console.log(5 + + '5');	
+// //(addition done) unary operator is added to string then string converted as a number 
+// console.log(5 - - '5');	
+
+// console.log('5' + + 5);	
+// //  here 1st have string and then number so concatanation is happens
+// console.log('5' - - 5)
+
+// removing the space---------------------
+// var a="soujanya ramdeni"
+// b="";
+// for(i=0;i<a.length;i++){
+//    if(a[i]!==" "){
+//     b+=a[i];
+//    } 
+// }
+// console.log(b)
+// -------------------------------(17-10-2023)-----------------------------
+// string methods-----------------------
+
+// // String length
+// var a="soujanya";
+// console.log(a.length)
+// // String charAt()
+// console.log(a.charAt(1));
+// // String charCodeAt()
+// console.log(a.charCodeAt(0)); //it prints ASCII value
+
+// // String slice()
+// var a="how are you";
+// console.log(a.slice(4));
+// console.log(a.slice(4,7)) //print aftr 3 index value to 7 index value
+// console.log(a.slice(-3)); //print from last index value
+
+// // String substring()
+// var a="what is this"
+// console.log(a.substring(2,7)); //from index 2 to bfr 7
+// console.log(a.substring(2)); //print remaining from index 2
+
+// // String substr()
+// var a="who-are you"
+// console.log(a.substr(4,6)) // from index 4 to length 6
+// console.log(a.substr(3))   //will slice out the rest of the string.
+// console.log(a.substr(-3))  //the position counts from the end of the string.
+
+// // String replace()
+// let c="hello"
+// console.log(c.replace(/l/,"c")); //replacing only 1st l
+// // String replaceAll()
+// console.log(c.replace(/l/gi,"c"));// replacing all the "l" values
+
+// // String toUpperCase()
+// let x="SoujAnya"
+// console.log(x.toUpperCase());
+// // String toLowerCase()
+// let y="SOUjanYA"
+// console.log(x.toLowerCase());
+
+// // String concat()
+// console.log("hello".concat("world"));
+
+// // String trim()
+// let b="  sou  jan ya  "
+// console.log(b.trim());
+// // String trimStart()
+// console.log(b.trinmStart());
+// // String trimEnd()
+// console.log(b.trimEnd());
+
+// // String padStart()
+// let d="soujanya"
+// console.log("s".padStart(5,"w"));
+// // String padEnd()
+// console.log("s".padEnd(5,"c"));
+
+// // String split()
+// let d="soujanya"
+// console.log(d.split("a"));
+
+// **// string search------------------------
+// let a="soujanya"
+// // String indexOf()
+// console.log(a.indexOf("a"));
+// console.log(a.indexOf("a",5));
+// // String lastIndexOf()
+// console.log(a.lastIndexOf("a"));
+
+// String search()
+// // let a="soujanya"
+// // console.log(a.search(/j/i));
+// // String match()
+// console.log(a.match(/a/gi));
+// // String matchAll()
+// // String includes()
+// console.log(a.includes("nya"))
+// console.log(a.includes("ramdeni"))
+// // String startsWith()
+// // String endsWith()
+
+// // task 1---------------
+// var a=prompt("enter num")
+// if(a[0]=="9"||a[0]=="8"||a[0]=="7"||a[0]=="6"&&a.length==10)
+// {
+//  console.log("it is a Indian number")
+// }else{
+//     console.log("not Indian number")
+// }
+// task 2------------------
+// var a="soujanya ramdeni" // removing the space
+// b="";
+// for(i=0;i<a.length;i++){
+//    if(a[i]!==" "){
+//     b+=a[i];
+//    } 
+// }
+// console.log(b)
+
+//task 3-------------
+// var a="123@345@567@789@"; //removing "@" value
+// b="";
+// for(i=0;i<a.length;i++){
+// if(a[i]!=="@"){
+//     b+=a[i];
+// }
+// }
+// console.log(b)
+// task 4---------------
+// var a=prompt("enter string") //remove even values and print odd values
+// b="";
+// for(i=0;i<a.length;i++){
+//     if(i%2!==0){
+//         b+=a[i];
+//     }
+// }
+// console.log(b)
+// task 5----------------
+// var x=prompt("string")
+// c=0
+// for(i=0;i<x.length;i++)  // console.log(x.match(/a/gi))
+// if(x[i]=="a"){
+//     c++
+// }
+// console.log(c)
+// task 6-----------------
+// const str = prompt("mail");
+// const substr = "@gmail.com";
+// if (str.includes(substr)) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+var a=prompt("enter mail");
+if (a.slice(-10)=="@gmail.com") {
+    console.log("true");
+}else{
+    console.log("flase");
+}
+</script>
+</body>
+</html>
